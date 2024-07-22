@@ -1,0 +1,204 @@
+/* queries  600px */
+@media screen and (min-width: 37.5em){
+    .section-cards {
+        justify-content: space-between;
+    }
+    .card {
+        flex-basis: calc(50% - 2.4rem);
+    }
+    .gallery {
+        gap: 0;
+    }
+    .gallery-img {
+        flex-basis: 50%;
+        margin-bottom: 1.8rem;
+    }
+}
+/* nav queries  768px(48em) to 892(*/
+@media screen and (min-width: 57em){
+    .bars-btn {
+        display: none;
+    }
+    .social-icons {
+        display: flex;
+    }
+    .social-icons a {
+        padding-top: 0;
+    }
+    .social-icons a:hover {
+        background-color: transparent;
+        color: var(--color-6);
+        margin-left: 0;
+    }
+    .nav-center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        width: 100vw;
+        overflow: hidden;
+        background-color: var(--color-white);
+        padding-right: 2.4rem;
+    }
+    .nav-header {
+        text-wrap: nowrap;
+    }
+    .nav-links {
+        transition: revert;
+        position: initial;
+        background-color: transparent;
+        backdrop-filter: blur(0);
+        height: initial;
+
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+        width: fit-content;
+    }
+    .nav-links ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+
+        padding: 2rem 0;
+    }
+    .links li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(10%);
+    }
+    .logo h1 {
+        padding: 0;
+    }
+    .links a {
+        font-size: 2.4rem;
+        padding-top: 0;
+        transition: none;
+        background-color: transparent;
+    }
+    .links a:hover {
+        background-color: transparent;
+        margin-left: 0;
+        color: var(--color-5);
+    }
+
+}
+@media screen and (min-width: 48em) {
+    /* Hero */
+    .hero {
+        height: calc(100vh - 30px);
+        background-image: linear-gradient(#8f7d64, rgba(0, 0, 0, 0.2)),
+        url("../../images/heo-image.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+        align-items: center;
+    }
+    .hero-text h1{
+        font-size: 4rem;
+    }
+    .hero-text p {
+        font-size: 2.4rem;
+    }
+    /* Services */
+    .services-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .service {
+        flex-basis: calc(50% - 20px);
+    }
+
+    .contact-form-content {
+        width: 60rem;
+    }
+}
+
+/* Hero 768px  */
+@media screen and (max-width: 48em) {
+    .image {
+        display: none;
+    }
+}
+
+/* Services 992px */
+@media screen and (min-width: 62em) {
+
+    .service {
+        flex-basis: calc(33.33% - 20px);
+        padding-bottom: 2.4rem;
+    }
+    .service:last-child {
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .service:last-child p {
+        width: calc(33.33% - 20px);
+    }
+    .section-cards {
+        justify-content: space-between;
+    }
+    .card {
+        flex-basis: calc(33.33% - 2.4rem);
+    }
+    .gallery {
+        justify-content: flex-start;
+    }
+    .gallery-img {
+        flex-basis: 33.33%;
+    }
+    .contact-form-content {
+        width: 80rem;
+    }
+    .copyright {
+        font-size: 2.4rem;
+    }
+}
+/* 1168px */
+@media screen and (min-width: 73em) {
+    .services-container {
+        flex-wrap: nowrap;
+        gap: 3.6rem;
+    }
+    .service {
+        flex-basis: auto;
+    }
+    .service:last-child p {
+        width: 100%;
+    }
+    .section-cards {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 3.6rem;
+    }
+    .card {
+        flex-basis: auto;
+
+    }
+    .gallery {
+        justify-content: flex-start;
+    }
+    .gallery-img {
+        flex-basis: 25%;
+    }
+    .contact-section .section-title {
+        font-size: 4.8rem;
+    }
+    .contact-form-content {
+        width: 90rem;
+    }
+}
